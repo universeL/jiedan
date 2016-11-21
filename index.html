@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>销售结算量</title>
+<link rel="stylesheet" href="css/SalesSettlementCss.css" />
+</head>
+<body>
+<div class="SalesSettlementWarp" id="js_SalesSettlementWarp">
+  <div class="ssBg"> <i class="icoRs-1 ico-s-bg"></i> <i class="icoRs-2 ico-s-bg"></i> <i class="icoRs-3 ico-s-bg"></i> <i class="icoRs-4 ico-s-bg"></i> <i class="icoRs-5 ico-s-bg"></i> <i class="icoRs-6 ico-s-bg"></i> <i class="icoRs-7 ico-s-bg"></i><i class="icoRs-8"></i><i class="icoRs-9"></i> </div>
+  <div class="bigMapbg"><span><img src="images/bigMapbg.png"></span></div>
+  <div class="dateTxt">
+    <div class="bigTitle">
+      <div class="t1"><span>销售结算量</span></div>
+      <div class="t2" id="dateD"><em>数据时点</em><span>2016-09-12</span><span>14：00</span></div>
+    </div>
+    <div class="titRight">
+      <div class="nianBox">
+        <div class="t3"> <span class="Tspan1">Y</span> <span class="Tspan2">年度<br>
+          累计</span> </div>
+        <div class="num" id="year">
+          <div class="t4"> <span>361.25</span> 万吨 </div>
+          <div class="t4"> <span>126.45</span> 亿元 </div>
+        </div>
+        <div class="line ldy"><i></i> </div>
+      </div>
+      <div class="juBox">
+        <div class="t3"> <span class="Tspan1">Q</span> <span class="Tspan2">季度<br>
+          累计</span> </div>
+        <div class="num" id="quarter">
+          <div class="t4"> <span>91.88</span> 万吨 </div>
+          <div class="t4"> <span>32.16</span> 亿元 </div>
+        </div>
+        <div class="line"><i></i> </div>
+      </div>
+      <div class="yueBox">
+        <div class="t3"> <span class="Tspan1">M</span> <span class="Tspan2">月度<br>
+          累计</span> </div>
+        <div class="num" id="month">
+          <div class="t4"> <span>46.76</span> 万吨 </div>
+          <div class="t4"> <span>17.43</span> 亿元 </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="SalesSettlementCanvas" id="js_SalesSettlementCanvas">
+    <div class="sm1">
+      <h1>2016年销售结算量<span>（单位：万吨）</span> </h1>
+      <div class="salesLegend"> <span style="color: #F8B551;"> <i></i> 月销售结算量 </span> <span style="color: #00A1E7;"> <i style="background-color: #00A1E7;"></i> 累计销售结算量 </span> </div>
+    </div>
+    <ul class="xul1_1">
+      <li><span>80</span></li>
+      <li><span>60</span></li>
+      <li><span>40</span></li>
+      <li><span>20</span></li>
+      <li><span>0</span></li>
+      <!--<li>
+        <div class="greenBlock"></div>
+        <span class="greenBlock_i">月销售量</span></li>-->
+    </ul>
+    <ul class="xul1_2">
+      <li><span>680</span></li>
+      <li><span>510</span></li>
+      <li><span>340</span></li>
+      <li><span>170</span></li>
+      <li><span>0</span></li>
+      <!--<li>
+        <div class="blueBlock"></div>
+        <span class="blueBlock_i">累计销售量</span></li>-->
+    </ul>
+    <div id="main1"></div>
+    <div class="sm2">
+      <h1>2016年销售结算金额<span>（单位：亿元）</span></h1>
+      <div class="salesLegend"> <span style="color: #F8B551;"> <i></i> 月销售结算金额 </span> <span style="color: #00A1E7;"> <i style="background-color: #00A1E7;"></i> 累计销售结算金额 </span> </div>
+    </div>
+    <ul class="xul2_1">
+      <li><span>40</span></li>
+      <li><span>30</span></li>
+      <li><span>20</span></li>
+      <li><span>10</span></li>
+      <li><span>0</span></li>
+      <!--<li>
+        <div class="greenBlock"></div>
+        <span class="greenBlock_i">月销售金额</span></li>-->
+    </ul>
+    <ul class="xul2_2">
+      <li><span>240</span></li>
+      <li><span>180</span></li>
+      <li><span>120</span></li>
+      <li><span>60</span></li>
+      <li><span>0</span></li>
+      <!--<li>
+        <div class="blueBlock"></div>
+        <span class="blueBlock_i">累计销售金额</span></li>-->
+    </ul>
+    <div id="main2"></div>
+  </div>
+</div>
+<link rel="stylesheet" href="css/SalesSettlementSVGCss.css" />
+<script type="text/javascript" src="js/echarts.js" ></script> 
+<script type="text/javascript" src="js/SalesSettlementJs.js" ></script> 
+<script type="text/javascript" src="js/salesChartState.config.js" ></script>
+</body>
+</html>
